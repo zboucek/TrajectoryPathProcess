@@ -1,0 +1,1 @@
+{"world_name": "forest", "n_col": 15, "max_iter": 1000, "abs_tol": 0.01, "single_segment": false, "constraints": true, "boundary": true, "warmstart": true, "method": "chebyshev", "init_level": "time", "init_control": false, "init_single": false}

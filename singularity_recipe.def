@@ -1,0 +1,24 @@
+Bootstrap: docker
+From: continuumio/miniconda3
+
+%labels
+    AUTHOR Zdenek Boucek
+    CONTACT zboucek@kky.zcu.cz
+    VERSION 1.0
+
+%post
+    /opt/conda/bin/conda create -n "drone_traj" -c conda-forge python=3.8.17 ipython \
+    numpy==1.21.2 scipy==1.7.2 matplotlib==3.5.3 sympy==1.11.1 \
+    pyomo==6.6.2 tikzplotlib==0.9.12 cloudpickle==2.0.0 pickleshare==0.7.5 \
+    ipopt=3.14.2
+    /opt/conda/bin/conda clean --all --yes
+
+%environment
+    export LC_ALL=C
+    export PATH="/opt/conda/bin:$PATH"
+    export PATH="/opt/conda/envs/drone_traj/bin:$PATH"
+
+%runscript
+  . /opt/conda/etc/profile.d/conda.sh
+  conda activate drone_traj
+  exec "$@"

@@ -1,0 +1,1 @@
+{"world_name": "simple", "n_col": 15, "max_iter": 1000, "abs_tol": 0.01, "single_segment": false, "constraints": false, "boundary": false, "warmstart": true, "method": "chebyshev", "init_level": "angular_rate", "init_control": false, "init_single": false}

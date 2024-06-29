@@ -1,0 +1,19 @@
+\begin{table}
+\small
+
+\caption{Evaluation of UAV trajectories found by PSM and PSEM for random columns with multi-segment initialization.}
+\label{tab:traj-plan-eval-random_columns-multi}
+\begin{tabular}{p{21mm}p{9mm}p{12mm}p{6mm}p{14mm}p{14mm}p{14mm}p{14mm}p{14mm}}
+\toprule
+Init. Level & Constr. & Method & Iter. & Optimality Criterion & Absolute Error & Sum Viol. & Obstacle Viol. & Total Time \\
+\midrule
+none & no & multi & \cellcolor{color8} 4 & 2.26e+01 & 7.44e-03 & \cellcolor{color3} 2.10e-04 & \cellcolor{color3} 1.29e-04 & \cellcolor{color8} 1576.18s \\
+position & no & multi & \cellcolor{color3} 1 & \cellcolor{color3} 1.49e+01 & \cellcolor{color3} 2.96e-03 & \cellcolor{color8} 3.90e-02 & \cellcolor{color8} 3.89e-02 & \cellcolor{color3} 31.20s \\
+position & yes & multi & \cellcolor{color3} 1 & \cellcolor{color3} 1.49e+01 & \cellcolor{color3} 2.96e-03 & \cellcolor{color8} 3.90e-02 & \cellcolor{color8} 3.89e-02 & 37.94s \\
+velocity & yes & multi & 2 & \cellcolor{color8} 2.45e+01 & \cellcolor{color8} 9.37e-03 & 1.49e-02 & 9.26e-03 & 345.94s \\
+orientation & yes & multi & 3 & 1.62e+01 & 6.39e-03 & 8.81e-04 & 7.96e-04 & 311.26s \\
+angular rate & yes & multi & 2 & \cellcolor{color8} 2.45e+01 & \cellcolor{color8} 9.37e-03 & 1.49e-02 & 9.26e-03 & 338.72s \\
+ang. rate ctrl & yes & multi & 3 & 1.76e+01 & 4.66e-03 & 1.53e-02 & 1.01e-02 & 346.07s \\
+\bottomrule
+\end{tabular}
+\end{table}

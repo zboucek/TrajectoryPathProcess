@@ -1,0 +1,23 @@
+\begin{table}
+\small
+
+\caption{Evaluation of UAV trajectories found by PSM and PSEM for 2 obstacles with single-segment initialization.}
+\label{tab:traj-plan-eval-simple2-single}
+\begin{tabular}{p{21mm}p{9mm}p{12mm}p{6mm}p{14mm}p{14mm}p{14mm}p{14mm}p{14mm}}
+\toprule
+Init. Level & Constr. & Method & Iter. & Optimality Criterion & Absolute Error & Sum Viol. & Obstacle Viol. & Total Time \\
+\midrule
+position & yes & multi & \cellcolor{color3} 3 & 3.10e+01 & 7.78e-03 & \cellcolor{color8} 2.41e-02 & \cellcolor{color8} 2.11e-02 & 167.66s \\
+position & no & multi & \cellcolor{color3} 3 & 3.10e+01 & 7.78e-03 & \cellcolor{color8} 2.41e-02 & \cellcolor{color8} 2.11e-02 & 378.71s \\
+position & no & single & \cellcolor{color8} 8 & \cellcolor{color8} 3.17e+01 & 9.16e-03 & \cellcolor{color10} 5.62e-03 & \cellcolor{color3} 3.30e-03 & 168.58s \\
+position & yes & single & \cellcolor{color8} 8 & \cellcolor{color8} 3.17e+01 & 9.16e-03 & \cellcolor{color10} 5.62e-03 & \cellcolor{color3} 3.30e-03 & 241.98s \\
+velocity & yes & single & 6 & \cellcolor{color10} 2.89e+01 & \cellcolor{color8} 9.62e-03 & 9.03e-03 & 6.51e-03 & \cellcolor{color10} 105.95s \\
+velocity & yes & multi & 7 & 3.00e+01 & \cellcolor{color10} 4.37e-03 & 1.34e-02 & 1.17e-02 & \cellcolor{color9} 730.64s \\
+orientation & yes & single & \cellcolor{color8} 8 & \cellcolor{color3} 2.88e+01 & \cellcolor{color3} 3.43e-03 & 5.74e-03 & 3.62e-03 & 163.24s \\
+angular rate & yes & single & 6 & \cellcolor{color10} 2.89e+01 & \cellcolor{color8} 9.62e-03 & 9.03e-03 & 6.51e-03 & 123.88s \\
+angular rate & yes & multi & 7 & 3.00e+01 & \cellcolor{color10} 4.37e-03 & 1.34e-02 & 1.17e-02 & 476.32s \\
+ang. rate ctrl & yes & single & 5 & 2.93e+01 & 8.66e-03 & 7.91e-03 & 6.20e-03 & \cellcolor{color3} 97.57s \\
+ang. rate ctrl & yes & multi & \cellcolor{color8} 8 & 3.03e+01 & 7.87e-03 & \cellcolor{color3} 4.71e-03 & 3.37e-03 & \cellcolor{color8} 1005.08s \\
+\bottomrule
+\end{tabular}
+\end{table}

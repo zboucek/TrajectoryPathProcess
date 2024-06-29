@@ -1,0 +1,2 @@
+Iteration No.,Objective,Segmentation,Absolute Error,Relative Error,Total Violation,State Violation,Control Violation,Obstacles Violation,Total Time,Iter. Time
+5,18.628489856729704,[27],0.00962325541306291,2.9621092160568163,0.003877714402769553,0.0017000377171382467,0.0,0.002177676685631306,140.35546684265137,37.065670013427734

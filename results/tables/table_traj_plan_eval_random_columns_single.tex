@@ -1,0 +1,26 @@
+\begin{table}
+\small
+
+\caption{Evaluation of UAV trajectories found by PSM and PSEM for random columns with single-segment initialization.}
+\label{tab:traj-plan-eval-random_columns-single}
+\begin{tabular}{p{21mm}p{9mm}p{12mm}p{6mm}p{14mm}p{14mm}p{14mm}p{14mm}p{14mm}}
+\toprule
+Init. Level & Constr. & Method & Iter. & Optimality Criterion & Absolute Error & Sum Viol. & Obstacle Viol. & Total Time \\
+\midrule
+none & no & multi & \cellcolor{color3} 2 & \cellcolor{color9} 2.10e+01 & 5.38e-03 & 2.83e-03 & 2.01e-03 & 150.63s \\
+none & no & single & \cellcolor{color8} 5 & 1.86e+01 & \cellcolor{color8} 9.62e-03 & 3.88e-03 & 2.18e-03 & 140.36s \\
+position & yes & multi & 4 & 1.77e+01 & 4.38e-03 & \cellcolor{color3} 5.98e-04 & \cellcolor{color3} 3.38e-04 & 151.39s \\
+position & no & multi & 4 & 1.77e+01 & 4.38e-03 & \cellcolor{color3} 5.98e-04 & \cellcolor{color3} 3.38e-04 & 199.44s \\
+position & no & single & \cellcolor{color8} 5 & 1.90e+01 & 8.22e-03 & 4.17e-03 & 2.20e-03 & 124.67s \\
+position & yes & single & \cellcolor{color8} 5 & 1.90e+01 & 8.22e-03 & 4.17e-03 & 2.20e-03 & 154.93s \\
+velocity & yes & multi & 4 & 1.72e+01 & 1.97e-03 & \cellcolor{color8} 1.04e-02 & \cellcolor{color8} 5.71e-03 & \cellcolor{color9} 394.50s \\
+velocity & yes & single & \cellcolor{color8} 5 & 1.76e+01 & 7.63e-03 & 2.94e-03 & 2.94e-03 & 101.50s \\
+orientation & yes & multi & \cellcolor{color10} 3 & \cellcolor{color3} 1.60e+01 & \cellcolor{color10} 1.56e-03 & 6.10e-03 & 3.49e-03 & \cellcolor{color8} 503.45s \\
+orientation & yes & single & 4 & 1.75e+01 & 3.94e-03 & 4.11e-03 & 4.10e-03 & \cellcolor{color10} 76.55s \\
+angular rate & yes & multi & 4 & 1.72e+01 & 1.97e-03 & \cellcolor{color8} 1.04e-02 & \cellcolor{color8} 5.71e-03 & 325.69s \\
+angular rate & yes & single & \cellcolor{color8} 5 & 1.76e+01 & 7.63e-03 & 2.94e-03 & 2.94e-03 & 128.18s \\
+ang. rate ctrl & yes & single & \cellcolor{color10} 3 & \cellcolor{color8} 2.39e+01 & \cellcolor{color9} 8.28e-03 & 3.73e-03 & 3.65e-03 & \cellcolor{color3} 46.71s \\
+ang. rate ctrl & yes & multi & \cellcolor{color10} 3 & \cellcolor{color10} 1.70e+01 & \cellcolor{color3} 1.17e-03 & 2.83e-03 & 1.04e-03 & 299.46s \\
+\bottomrule
+\end{tabular}
+\end{table}

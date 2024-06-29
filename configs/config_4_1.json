@@ -1,0 +1,1 @@
+{"world_name": "random_spheres", "n_col": 15, "max_iter": 1000, "abs_tol": 0.01, "single_segment": true, "constraints": true, "boundary": true, "warmstart": true, "method": "chebyshev", "init_level": "time", "init_control": false, "init_single": true}
